@@ -18,6 +18,30 @@
         <td>
           <h1 id="message">Hello World!</h1>
           <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
+            <div id="NewGroupModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm" style="margin-top:150px">
+
+                <!-- Modal content-->
+                <div class="modal-content" style="float:left; width:100%">
+                    <div class="modal-header popupHeader" style="float:left; width:100%">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Group Edit</h4>
+                    </div>
+                    <div class="modal-body" style="float:left; width:100%">
+                        <div class="form-group">
+                            <label>New Group</label>
+                      <input type="text" ng-model="GroupName" class="form-control" />
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer popupfooter" style="float:left; width:100%">
+                        <button type="button" class="btn btn-success" ng-click="AddNewGroup()">Save</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         </td>
       </tr>
     </table>
